@@ -1,0 +1,136 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(137, 163, 137);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#quiz-container {
+    display: none;
+}
+
+#question-container {
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+#question {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+#counts-display {
+    font-size: 16px;
+    color: #333;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #e0e0e0;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#counts-display p {
+    margin: 0;
+    width: 100px; /* Adjust width if necessary */
+    text-align: center;
+}
+
+.option-btn {
+    display: block;
+    width: 100%;
+    padding: 20px;
+    margin: 10px 0;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.option-btn:hover {
+    background-color: #0056b3;
+}
+
+#next-btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#next-btn:hover {
+    background-color: #0056b3;
+}
+
+.option-btn.correct {
+    background-color: #4CAF50; /* Green for correct */
+}
+
+.option-btn.incorrect {
+    background-color: #f44336; /* Red for incorrect */
+}
+
+#result-container {
+    display: none;
+    text-align: center;
+    margin-top: 25px;
+}
+
+#result-container button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #007bff;
+    color: black;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#result-container button:hover {
+    background-color: #0056b3;
+}
+
+#correct-count-btn-result,
+#wrong-count-btn-result,
+#stars-btn-result {
+    background-color: #ff2600; /* Default button color */
+}
+
+#correct-count-btn-result:hover,
+#wrong-count-btn-result:hover,
+#stars-btn-result:hover {
+    background-color: #b36200; /* Hover color */
+}
