@@ -1,0 +1,250 @@
+body, html {
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    /* overflow: hidden; Prevent scrolling */
+    font-family: Product Sans, sans-serif;
+}
+header{
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+.custom-link {
+    color: inherit; /* Keeps the text color the same as the parent element */
+    text-decoration: none; /* Removes the underline */
+  }
+.custom-link:hover {
+    color: #e2262c;
+}
+.video-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1; /* Send the video behind other content */
+}
+
+.background-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translate(-50%, -50%);
+    z-index: -1; /* Ensure the video is behind other content */
+    object-fit: cover; /* This ensures the video covers the entire container without distortion */
+}
+
+.Header-links{
+    margin-top: 5px;
+    margin-left: 25px;
+    color: white;
+    font-weight: bold;
+    font-size: medium;
+    font-family: Product Sans, sans-serif;
+
+}
+.content {
+    position: relative;
+    z-index: 1;
+    padding: 20px;
+    color: white;
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    font-size:xx-large;
+    font-weight: bolder;
+}
+.content-item {
+    margin-bottom: 20px; /* Add some spacing between the items */
+}
+.flex-container {
+    display: flex;
+    justify-content: center; /* Horizontally center the flex items */
+    gap: 70px;               /* Add space between flex items */
+}
+
+.flex-item {
+    margin-top: 130px;
+    /* padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px; */
+    height: 180px;
+    width: 200px;
+    /* background-color: rgba(255, 255, 255, 0.2);  */
+    border-radius: 5px;
+    
+}
+
+.main-content {
+    padding: 20px;
+    background-color: #F5F5F5; /* Background color for the rest of the content */
+    color: black; /* Text color for better contrast */
+    z-index: 2; /* Ensure it appears above the video */
+    position: relative; /* Maintain its position in the document flow */
+}
+.block-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    background-color: #ecf0f1;
+    padding: 20px;
+    margin: -20px;
+
+}
+
+.block {
+    width: 200px;
+    height: 200px;
+    background-color: #F5F5F5;
+    color: #2c3e50;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    /* font-weight: bold; */
+    border-radius: 25px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    margin: 10px;
+    margin-top: 120px;
+    margin-bottom: 120px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.block:hover {
+    transform: scale(1.1);
+    /* background-color: #3498db; */
+    background-color: #db4534;
+
+    color: #ecf0f1;
+}
+.About-us{
+    margin: 40px;
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+.about_text_container{
+    margin-right: 100px ;
+    margin-top: 50px;
+
+}
+.about_text{
+    color: #2c3e50;
+    font-size: larger;
+    line-height: 1.6;
+}
+.whoweare{
+    color: #db4534;
+    font-weight: bolder;
+    font-size: xx-large;
+    /* margin-bottom: -2px; */
+    
+}
+/* General Footer Styles */
+footer {
+    background-color: #2C3E50;
+    color: #FFFFFF;
+    padding: 20px 0;
+    margin: -50px;
+    margin-top: 50px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 20px;
+   
+}
+
+.footer-container div {
+    flex: 1;
+    min-width: 300px;
+}
+
+.contact-info{
+    margin-left: 70px;
+}
+
+/* Contact Information Styles */
+.contact-info h4, .quick-links-social h4 {
+    margin-bottom: 10px;
+}
+
+.contact-info p, .quick-links-social ul li {
+    margin-bottom: 8px;
+}
+
+/* Quick Links Styles */
+.quick-links-social ul {
+    list-style: none;
+    padding: 0;
+}
+
+.quick-links-social ul li a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.quick-links-social ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Social Media Links */
+.social-media a {
+    color: #FFFFFF;
+    margin-right: 15px;
+    text-decoration: none;
+}
+
+.social-media a:hover {
+    text-decoration: underline;
+}
+
+/* Bottom Footer Section */
+.footer-bottom {
+    background-color: #1A1A1D;
+    padding: 10px 0;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.newsletter-signup form {
+    margin-bottom: 10px;
+}
+
+.newsletter-signup input[type="email"] {
+    padding: 5px;
+    margin-right: 10px;
+    border: 1px solid #4B4B4B;
+    background-color: #2C3E50;
+    color: #FFFFFF;
+}
+
+.newsletter-signup button {
+    padding: 5px 10px;
+    background-color: #4B4B4B;
+    color: #FFFFFF;
+    border: none;
+    cursor: pointer;
+}
+
+.newsletter-signup button:hover {
+    background-color: #3D3D3D;
+}
+
+/* Legal Information */
+.legal p {
+    margin: 5px 0;
+}
+
