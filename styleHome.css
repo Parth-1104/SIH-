@@ -98,11 +98,12 @@ header{
     text-align: center;
     font-size: 50px;
     font-weight: bolder;
-    background-color: #ecf0f1;
+    background-color: #f3f3f3;
+;
     /* margin-top: -20px; */
     margin: -20px;
     padding-top: 30px;
-    color: #db4534;
+    color: #2db9f0;
     /* margin-left: 20px;
     margin-right: 20px; */
 
@@ -111,7 +112,7 @@ header{
     display: flex;
     justify-content: space-around;
     gap: 20px;
-    background-color: #ecf0f1;
+    background-color: #f3f3f3;
     padding: 20px;
     margin: -20px;
     /* color: #db4534; */
@@ -139,7 +140,7 @@ header{
 .block:hover {
     transform: scale(1.1);
     /* background-color: #3498db; */
-    background-color: #db4534;
+    background-color: #2db9f0;
 
     color: #ecf0f1;
 }
