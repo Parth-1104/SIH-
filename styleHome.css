@@ -8,6 +8,10 @@ body, html {
 }
 header{
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    height: 50px;
+}
+.mainlogo{
+    margin-top: -25px;
 }
 .custom-link {
     color: inherit; /* Keeps the text color the same as the parent element */
