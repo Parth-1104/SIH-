@@ -24,7 +24,10 @@
                     <a href="indexHome.html" class="custom-link">Home</a>
                 </div>
                 <div class ="Header-links">
-                    <a href="#About-us" class="custom-link">About us</a>
+                    <a href="#block-container" class="custom-link">Water Bodies</a>
+                </div>
+                <div class ="Header-links">
+                    <a href="#About-us" class="custom-link" style="color: #2db9f0;">About us</a>
                 </div>
                 <div class ="Header-links">
                     <a href="#contact-us" class="custom-link">Contact us</a>
@@ -44,7 +47,18 @@
             </div>
             <div class="content">
                 <div class="content-item">
-                    <h1>Welcome to Delhi's Largest Water Body Database</h1>
+                    <div class="content-item-h1">
+                        <div>
+                            <h1>Welcome to Delhi's</h1>
+                        </div>
+                        <div style="color: #2db9f0;">
+                            <h1 style="padding-left: 15px ;"> Largest Water Body </h1>
+                        </div>
+                    </div>
+                    <div class="content-item-h2">
+                        <h1>Database</h1>
+                    </div>
+                    <!-- <h1>Welcome to Delhi's Largest Water Body Database</h1> -->
                 </div>
                 <div class="flex-container">
                     <div class="flex-item">
@@ -65,25 +79,25 @@
                     </div>
                     <div class="flex-item">
                         <h2 style="margin-bottom: -40px ;">
-                            1300+
+                            75%+
                         </h2>
                         <h6>
-                            Water Bodies
+                            Yamuna polluted
                         </h6>
                     </div>
                     <div class="flex-item">
                         <h2 style="margin-bottom: -40px ;">
-                            1300+
+                            1/5
                         </h2>
                         <h6>
-                            Water Bodies
+                            Cause of diseases
                         </h6>
                     </div>                 
                 </div>
             </div>
         <div class="main-content">
-            <div class="block-container-heading">Zone Distribution</div>
-            <div class="block-container">
+            <!-- <div class="block-container-heading">Zone Distribution</div> -->
+            <div class="block-container" id="block-container">
                 <!-- <h2>Zone Distribution</h2> -->
                 <div class="block" onclick="window.location.href='indexNorthZone.html'">NORTH</div>
                 <div class="block" onclick="window.location.href='indexSouthZone.html'">SOUTH</div>
@@ -94,11 +108,14 @@
             </div>
             <div class="About-us" id="About-us">
                 <div class="about_text_container">
-                    <h3 class="whoweare">Who We Are</h3>
-                    <div class="about_text">In a city like Delhi, where water is the lifeblood sustaining millions, its preservation is critical. Our water monitoring system is more than mere technology; it’s a pledge to safeguard this essential resource. Acting as a vigilant guardian, it ensures every drop is clean, safe, and accessible. For the families who depend on it, the children who deserve a future free from scarcity, and the city that thrives on its flow, this system symbolizes hope. It’s our commitment to a sustainable Delhi, where water scarcity is a thing of the past, and every citizen enjoys the dignity of clean water access.</div>
+                    <h3 class="whoarewe">Who Are We?</h3>
+                    <div class="about_text">In a city like Delhi, where water sustains millions, preserving it is vital. Our water monitoring system, powered by satellite imagery from Sentinel-2 via Google Earth Engine, goes beyond technology—it’s a commitment to safeguarding this precious resource. By ensuring the quality and safety of every drop, we provide hope for families, protect children’s futures, and support the city’s growth. This system represents our dedication to a sustainable Delhi, where water scarcity is a thing of the past, and clean water access is a right for all.</div>
                 </div>
-                <div class="about_img">
-                    <img src="about_img.jpeg" alt="image" height="550px" width="500px">
+                <div class="about_slideshow">
+                    <video autoplay loop muted playsinline style="width: 600px; height:550px;">
+                        <source src="slideshow.mp4" type="video/mp4">
+                        <!-- Your browser does not support the video tag. -->
+                    </video>
                 </div>
             </div>
             <footer>
