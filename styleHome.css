@@ -21,6 +21,15 @@ header{
 .custom-link:hover {
     color: #2db9f0;
 }
+.Header-links{
+    margin-top: 5px;
+    margin-left: 25px;
+    color: white;
+    font-weight: bold;
+    font-size: medium;
+    font-family: Product Sans, sans-serif;
+
+}
 .video-container {
     position: fixed;
     top: 0;
@@ -44,15 +53,7 @@ header{
     object-fit: cover; /* This ensures the video covers the entire container without distortion */
 }
 
-.Header-links{
-    margin-top: 5px;
-    margin-left: 25px;
-    color: white;
-    font-weight: bold;
-    font-size: medium;
-    font-family: Product Sans, sans-serif;
 
-}
 .content {
     position: relative;
     z-index: 1;
