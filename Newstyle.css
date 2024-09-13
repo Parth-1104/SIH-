@@ -1,0 +1,299 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    color: #fff;
+}
+
+
+
+html,body{
+    height: 100%;
+    width: 100%;
+    perspective: 800px;
+}
+#nav{
+    height: 60px;
+    width:100%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    padding: 0,150px;
+    justify-content: flex-start;
+    gap: 45px;
+    position: fixed;
+    z-index: 99;
+
+}
+#nav img{
+    height: 110px;
+}
+#nav h4{
+    text-transform: uppercase;
+    font-weight: 500;
+}
+#bg{
+    min-height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: fixed;
+    z-index: -1;
+
+}
+#main{
+    position: relative;
+    background-color: rgb(0,0,0,0.39);
+    overflow-y: hidden;
+    overflow-x: hidden;
+   
+
+}
+
+#page1{
+    height: 100vh;
+    /* background-color: red; */
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+
+}
+#page1 h1{
+    font-size: 70px;
+    font-weight: 800;
+    position: relative;
+}
+#page1 h1::before{
+    content: "MONITER.DETECT.CLEAN.";
+    position: absolute;
+    color: green;
+    top: -4px;
+    left: -4px;
+    -webkit-text-stroke: 2px #95c11e;
+    z-index: -1;
+    
+}
+#page1 h2{
+    font-size:30px ;
+    font-weight: 900;
+}
+#page2{
+    min-height: 100vh;
+    width: 100%;
+}
+#scroller{
+    /* background-color: red; */
+    padding-top: 130px;
+    white-space: nowrap;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    position: relative;
+    z-index: 10;
+
+}
+#scroller::-webkit-scrollbar{
+    display: none;
+}
+#scroller-in-1{
+    display: inline-flex;
+    gap: 30px;
+    /* white-space: nowrap; */
+    animation-name: scroll;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+#scroller h4{
+    display: inline-block;
+    font-size: 70px;
+    font-weight: 900;
+    font-family: gilroy;
+    color: #2db9f0;
+    -webkit-text-stroke: 2px #2db9f0;
+    transition: all linear 0.2s;
+}
+/* #scroller h4:hover{
+    color: #2db9f0;
+
+} */
+@keyframes scroll {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+    
+}
+
+
+
+
+.main-content {
+    
+     /* Background color for the rest of the content */
+    color: black; /* Text color for better contrast */
+    z-index: 2; /* Ensure it appears above the video */
+    position: relative;
+    justify-content: center; /* Maintain its position in the document flow */
+}
+.block-container-heading {
+    text-align: center;
+    font-size: 50px;
+    font-weight: bolder;
+    /* background-color: #E0E0E0; */
+;
+    /* margin-top: -20px; */
+    margin: -20px;
+    padding-top: 30px;
+    color: #2db9f0;
+    /* margin-left: 20px;
+    margin-right: 20px; */
+
+}
+.block-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    /* background-color: #E0E0E0; */
+    padding: 20px;
+    margin: -20px;
+    border-color: #fff;
+    /* margin-top: -10px;
+    margin-left: -10px; */
+    /* color: #db4534; */
+
+}
+/* =============== */
+.block {
+    width: 200px;
+    height: 200px;
+    background-color: #2e557c;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    
+    border-radius: 25px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    margin-top: -400px;
+    margin-bottom: 120px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.block-logo{
+    padding-left: 30px;
+    padding-top: 20px;
+}
+
+.block:hover {
+    transform: scale(1.1);
+    /* background-color: #3498db; */
+    background-color: #2db9f0;
+
+    color: #ecf0f1;
+}
+
+
+
+/*  ======================== */
+
+
+#about-us{
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row; 
+    /* align-items: center; */
+    justify-content: space-between;
+    padding: 0 50px;
+}
+#about-us video{
+    height: 500px;
+    width: 300px;
+    margin-right: -200px;
+}
+#About-us-in{
+    width: 30%;
+    height: fit-content;
+    flex: 1;
+}
+#About-us-in p{
+    font-size: 20px;
+    font-weight: 500;
+}
+#About-us-in h3{
+    font-size: 30px;
+}
+#slide{
+    flex: 1;
+    margin-right: -800px;
+}
+
+.about-logos{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    margin-top: 30px;
+}
+#cards-container{
+    /* background-color: red; */
+    height: 60vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    position: relative;
+    z-index: 10;
+
+}
+.card{
+    height: 80%;
+    width: 24%;
+    /* background-color: #2db9f0; */
+    border-radius: 20px;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    transition: all ease 0.6s;
+
+}
+#card1{
+    background-image: url(card1.jpeg);
+}
+#card2{
+    background-image: url(fish.jpeg);
+}
+#card3{
+    background-image: url(check.jpeg);
+}
+.overlay{
+    height: 100%;
+    width: 100%;
+    background-color: #2db9f0;
+    /* padding-top: 1390px; */
+    padding: 30px;
+    opacity: 0;
+    transition: all ease 0.6s;
+}
+.overlay h4{
+    color: black;
+    font-size: 30px;
+    white-space: nowrap;
+    margin-bottom: 20px;
+   
+}
+.overlay p{
+    color: black;
+    font-size: 18px;
+}
+.card:hover .overlay{
+    opacity: 1;
+}
+.card:hover{
+    transform: rotate3d(1,1,0,19deg);
+}
